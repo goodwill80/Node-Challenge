@@ -3,13 +3,11 @@ var Car = function(color, convertible, speed) {
   this.convertible = convertible;
   this.speed = speed;
   this.accelerate = function(speedIncrease){
-      console.log("Previous speed is " + this.speed);
-      return this.speed += speedIncrease;
+      return "Previous speed is " + this.speed + "Current speed is " + (this.speed += speedIncrease);
   };
 
   this.decelerate = function(speedDecrease){
-      console.log("Previous speed is " + this.speed);
-      return this.speed -= speedDecrease;
+      return "Previous speed is " + this.speed + "Current speed is " + (this.speed -= speedDecrease);
   };
 };
 
